@@ -5,13 +5,18 @@
     <style>
         body { font-family: Arial; margin: 40px; }
         textarea { width: 400px; height: 150px; }
-        .result { margin-top: 20px; padding: 10px; border: 1px solid #ccc; }
+        .result { margin-top: 20px; padding: 10px; border: 1px solid #ccc; max-width: 800px; }
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
     </style>
 </head>
 <body>
     <h1>AI News Summarizer</h1>
     <form method="post">
-        <textarea overflow= "hidden" name="news_input" placeholder="Enter news here..."></textarea><br>
+        <textarea name="news_input" placeholder="Enter news here..."></textarea><br>
         <button type="submit">Summarize</button>
     </form> 
 
